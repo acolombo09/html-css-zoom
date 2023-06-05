@@ -16,8 +16,7 @@ body{
 }
 
 header, main, footer{
-  border: 1px dashed red;
-  min-height: 100px;
+  min-height: 81px;
 }
 
 main {
@@ -25,20 +24,16 @@ main {
   overflow: auto;
 }
 
+footer{
+  background-color: #222222;
+}
+
 .user-card{
-  background-color: red;
   height: 200px;
   width: 250px;
   margin: .5rem .1rem;
   position: relative;
 }
-
-/* .user-card img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: relative;
-} */
 
 main .container{
   display: flex;
@@ -61,11 +56,16 @@ footer .container{
 
 .speaker-view{
   background-color: #4a4a4a;
-  width: 4.5rem;
+  width: fit-content;
   height: 1.5rem;
   border-radius: 5px;
-  border: 1px dashed white;
   margin: 3px 3px;
+  color: white;
+  display: inline-block;
+  padding-top: .2rem;
+  padding-left: .3rem;
+  padding-right: .3rem;
+  text-align: center;
 }
 
 .widescreen{
@@ -73,8 +73,10 @@ footer .container{
   width: 1.5rem;
   height: 1.5rem;
   border-radius: 5px;
-  border: 1px dashed white;
   margin: 3px 3px;
+  color: white;
+  text-align: center;
+  padding-top: 2px;
 }
 
 .bottom-overlay{
@@ -85,34 +87,24 @@ footer .container{
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: .5rem .3rem;
 }
 
-/* .muted{
-  background-color: red;
+.muted{
   color: white;
-  font-size: 0.5rem;
-  padding: 4px;
-} */
-
-/* .username{
-  background-color: green;
-  color: white;
-  font-size: 0.5rem;
-  padding: 4px;
-} */
-
-.mute-stop{
-  border: 1px dashed yellow;
-  display: flex;
+  font-size: 1rem;
 }
 
-.room-interactions{
-  border: 1px dashed yellow;
+.username{
+  color: white;
+  font-size: 0.8rem;
+}
+
+.mute-stop, .room-interactions{
   display: flex;
 }
 
 .end-meeting{
-  border: 1px dashed yellow;
   background-color: #4a4a4a;
   width: fit-content;
   height: 100%;
@@ -125,7 +117,6 @@ footer .container{
 
 .function{
   color: white;
-  border: 1px dashed white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -147,9 +138,14 @@ footer .container{
 }
 
 .arrow-up{
-  border: 1px dashed white;
   padding: 1rem .5rem;
-  font-size: .2rem;
+  font-size: 1rem;
+}
+
+.room-interactions .arrow-up{
+  padding: 1rem .5rem;
+  font-size: 1rem;
+  color: white;
 }
 
 .end-meeting span{
